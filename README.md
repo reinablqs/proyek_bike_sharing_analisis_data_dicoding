@@ -1,4 +1,4 @@
-# proyek_bike_sharing_analisis_data_dicoding✨
+# proyek_bike_sharing_analisis_data_dicoding ✨
 
 ## Setup Environment - Anaconda
 ```

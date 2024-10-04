@@ -45,7 +45,7 @@ if page == "Day Data":
 
     # Visualisasi 1
     
-    st.header('Dashboard: Jumlah Peminjaman Sepeda Berdasarkan Cuaca dan Hari Kerja')
+    st.header('Number of Bikes Borrowed Based on Weather and Working Day')
 
     # Group the data
     grouped_data = filtered_day_df.groupby(['weathersit', 'workingday'])['cnt'].sum().unstack()
@@ -53,9 +53,9 @@ if page == "Day Data":
     # Create a bar plot
     plt.figure(figsize=(12, 6))
     grouped_data.plot(kind='bar', ax=plt.gca())
-    plt.title('Jumlah Peminjaman Sepeda Berdasarkan Cuaca dan Hari Kerja')
-    plt.xlabel('Cuaca')
-    plt.ylabel('Jumlah Peminjaman')
+    plt.title('Number of Bikes Borrowed Based on Weather and Working Day')
+    plt.xlabel('Weather')
+    plt.ylabel('Number of Rentals')
     plt.legend(labels=['Holiday', 'Weekday'])  # Adjust labels according to 'workingday' values
     plt.xticks(rotation=0)  # Rotate x-axis labels
     plt.tight_layout()  # Adjust layout
