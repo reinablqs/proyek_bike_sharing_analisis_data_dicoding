@@ -1,1 +1,22 @@
-# proyek_bike_sharing_analisis_data_dicoding
+# proyek_bike_sharing_analisis_data_dicoding✨
+
+## Setup Environment - Anaconda
+```
+conda create --name main-ds python=3.12
+conda activate main-ds
+pip install -r requirements.txt
+```
+
+## Setup Environment - Shell/Terminal
+```
+mkdir proyek_analisis_data
+cd proyek_analisis_data
+pipenv install
+pipenv shell
+pip install -r requirements.txt
+```
+
+## Run steamlit app
+```
+streamlit run dashboard\dashboard.py
+```
