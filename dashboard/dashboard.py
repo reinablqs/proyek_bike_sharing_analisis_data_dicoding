@@ -66,24 +66,6 @@ if page == "Day Data":
 
     st.header('Average Daily Rentals for Casual and Registered Users')
 
-    # Group by hour and calculate the mean rentals for casual and registered users
-    hourly_rentals = filtered_day_df.groupby('hr')[['casual', 'registered']].mean().reset_index()
-
-    # Create the plot
-    plt.figure(figsize=(12, 6))
-    sns.lineplot(x='hr', y='casual', data=hourly_rentals, label='Casual Users', marker='o')
-    sns.lineplot(x='hr', y='registered', data=hourly_rentals, label='Registered Users', marker='o')
-
-    # Add titles and labels
-    plt.title('Average Daily Rentals for Casual and Registered Users')
-    plt.xlabel('Day of the Week')
-    plt.ylabel('Average Number of Rentals')
-    plt.legend()
-    plt.xticks(range(0, 24))  # Set x-ticks from 0 to 23 to represent hours
-
-    # Display the plot in Streamlit
-    st.pyplot(plt)
-
     # Visualisasi 2 
 
     # Group by days_of_the_week and calculate the mean rentals for casual and registered users
